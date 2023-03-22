@@ -272,9 +272,14 @@ input {
     outline: none;
 }
 
+input{
+    font-size: 15rem;
+}
+
 .SearchWrap {
     padding-left: 13rem;
     padding-top: 12rem;
+    padding-bottom: 9rem;
 }
 
 .search a {
@@ -700,12 +705,10 @@ figcaption a:hover {
 
 .ButtonMac:hover {
     transform: scale(1.05);
-    border-radius: 10rem;
 }
 
 .ButtonMac1:hover {
     transform: scale(1.05);
-    border-radius: 10rem;
 }
 
 .MacbookButton {
@@ -901,7 +904,7 @@ footer a {
     }
 }
 
-@media screen and (min-width: 908px) {
+@media screen and (min-width: 932px) {
     .HeaderLineWrap {
         justify-content: space-between;
     }
@@ -916,6 +919,6 @@ footer a {
         content: url(../css/img/search.png);
         position: relative;
         right: 12px;
-        top: -12px;
+        top: -2rem;
     }
 }
