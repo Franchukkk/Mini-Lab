@@ -11,6 +11,7 @@ a {
     cursor: url(../css/cursor.cur), auto;
 }
 
+
 @font-face {
     font-family: 'Segoe UI Regular';
     src: url('SegoeUI.eot');
@@ -48,9 +49,8 @@ h4 {
 }
 
 .header-line {
-    position: fixed;
     width: 100%;
-    padding: 10rem;
+    padding: 10rem 0;
     top: 0;
     filter: drop-shadow(0.707px 0.707px 4px rgba(0, 0, 0, 0.12));
     box-shadow: inset 0px -1px 0px #e6e6e6;
@@ -127,7 +127,6 @@ h4 {
 .activeMenu{
     display: block;
     z-index: 2;
-    position: fixed;
 }
 
 .HeaderLineWrap {
@@ -210,6 +209,10 @@ header ul {
     display: none;
     justify-content: space-between;
     max-width: 515rem;
+    padding-left: 20rem;
+}
+
+.MacbookForFreeWrap{
     padding-left: 20rem;
 }
 
@@ -757,18 +760,19 @@ figcaption a:hover {
 #a3 {
     display: block;
     background-image: url(../css/img/ChroneEdgeOpera.png);
-    width: 35px;
-    height: 35px;
+    width: 35rem;
+    height: 35rem;
+    background-size: cover;
     transition: 0.5s;
 }
 
 a#a2 {
-    background-position: -37px 0;
+    background-position: -37rem 0;
 }
 
 
 a#a3 {
-    background-position: 35px 0;
+    background-position: 35rem 0;
 }
 
 footer {
@@ -789,7 +793,7 @@ footer a:hover {
 }
 
 .PartsOne {
-    display: flex;
+    display: block;
     justify-content: center;
     max-width: 1120rem;
     margin-bottom: 20px;
@@ -851,6 +855,13 @@ footer a {
     row-gap: 7rem;
 }
 
+.FooterParts{
+    max-width: 200px;
+    margin: 0 auto;
+    margin-bottom: 20rem;
+}
+
+
 @media screen and (min-width: 426px) {
     html {
         font-size: 1px;
@@ -858,6 +869,25 @@ footer a {
 
     footer a {
         padding-bottom: 16rem;
+    }
+}
+
+@media screen and (max-width:470px){
+    .InterestingProductsWrap{
+        padding-right: 10rem;
+    }
+}
+
+@media screen and (min-width:580px){
+    .PartsOne{
+        display: flex;
+        column-gap: 30rem;
+    }
+}
+
+@media screen and (max-width:900px){
+    .PartsOne{
+        column-gap: 200rem;
     }
 }
 
@@ -882,7 +912,7 @@ footer a {
 @media screen and (max-width: 769px) {
     .HeaderLineWrap {
         justify-content: space-between;
-        padding: 12rem;
+        padding: 10rem;
     }
 }
 
@@ -912,13 +942,103 @@ footer a {
 
 @media screen and (min-width: 2200px){
     html{
-        font-size: 1.8px;
+        font-size: 2.2px;
     }
 
     .search a::after {
-        content: url(../css/img/search.png);
+        display: block;
+        content: '';
+        background-image: url(../css/img/search.png);
         position: relative;
+        width: 15rem;
+        height: 15rem;
         right: 12px;
-        top: -2rem;
+        background-size: cover;
+    }
+
+    .BuyBasket a:before {
+        display: block;
+        content: '';
+        background-image: url(../css/img/cart.png);
+        position: relative;
+        width: 20rem;
+        height: 15rem;
+        right: 12px;
+        background-size: cover;
+    }
+
+    .ButtonMac1{
+        position: relative;
+    }
+
+    .ButtonMac1 a:after {
+        display: block;
+        content: '';
+        background-image: url(../css/img/arr-right.png);
+        position: absolute;
+        width: 10rem;
+        height: 17rem;
+        left: 80%;
+        bottom: 30%;
+        background-size: cover;
+    }
+
+    .MacbookButton{
+        position: relative;
+    }
+
+    .MacbookButton a:after {
+        display: block;
+        content: '';
+        background-image: url(../css/img/arr-right\ \(1\).png);
+        position: absolute;
+        width: 10rem;
+        height: 17rem;
+        left: 80%;
+        bottom: 30%;
+        background-size: cover;
+    }
+
+    .slide1 a:before {
+        display: block;
+        content: '';
+        background-image: url(../css/img/arr-left.png);
+        position: absolute;
+        top: 30%;
+        left: 35%;
+        width: 13rem;
+        height: 22rem;
+        background-size: cover;
+    }
+
+    .slide2 a:before {
+        display: block;
+        content: '';
+        background-image: url(../css/img/arr-right\ \(1\).png);
+        position: absolute;
+        top: 30%;
+        left: 35%;
+        width: 13rem;
+        height: 22rem;
+        background-size: cover;
+    }
+
+    figcaption a:after{
+        display: inline-block;
+        content: '';
+        width: 7rem;
+        height: 10rem;
+        background-image: url(../css/img/arr-right\ \(2\).png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .langauge a:first-child::before {
+        display: block;
+        content: '';
+        width: 17rem;
+        height: 17rem;
+        background-image: url(../css/img/lang.png);
+        background-size: cover;
     }
 }
