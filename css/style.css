@@ -885,7 +885,7 @@ footer a {
     }
 }
 
-@media screen and (max-width:470px) {
+@media screen and (max-width:500px) {
     .InterestingProductsWrap {
         padding-right: 30rem;
     }
