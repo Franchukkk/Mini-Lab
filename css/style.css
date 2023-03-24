@@ -32,7 +32,7 @@ a {
     font-style: normal;
 }
 
-li{
+li {
     list-style-type: none;
 }
 
@@ -58,18 +58,18 @@ h4 {
     z-index: 2;
 }
 
-.SecondPartOpen{
+.SecondPartOpen {
     padding-top: 20rem;
     display: block;
 }
 
-.SecondPartOpen .search{
+.SecondPartOpen .search {
     margin: auto;
     text-align: left;
     max-width: 250rem;
 }
 
-.logo img{
+.logo img {
     width: 100rem;
 }
 
@@ -97,8 +97,20 @@ h4 {
     display: block;
 }
 
-.open-menu ul li:not(li:last-child) {
-    margin-bottom: 20px;
+.open-menu ul li {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ccc;
+}
+
+.second-sub li > ul{
+    padding: 0;
+}
+
+.open-menu ul li:focus {
+    background-color: #ccc;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ccc;
 }
 
 .sub-menu {
@@ -116,15 +128,15 @@ h4 {
     display: none;
 }
 
-.sub-menu li a:hover > div {
+.sub-menu li a:hover>div {
     display: block;
 }
 
-.activeSub{
+.activeSub {
     display: block;
 }
 
-.activeMenu{
+.activeMenu {
     display: block;
     z-index: 2;
 }
@@ -212,11 +224,11 @@ header ul {
     padding-left: 20rem;
 }
 
-.MacbookForFreeWrap{
+.MacbookForFreeWrap {
     padding-left: 20rem;
 }
 
-.asas:hover ~ .menu {
+.asas:hover~.menu {
     display: inline-block;
 }
 
@@ -275,7 +287,7 @@ input {
     outline: none;
 }
 
-input{
+input {
     font-size: 15rem;
 }
 
@@ -856,7 +868,7 @@ footer a {
     row-gap: 7rem;
 }
 
-.FooterParts{
+.FooterParts {
     max-width: 200rem;
     margin: 0 auto;
     margin-bottom: 20rem;
@@ -873,22 +885,22 @@ footer a {
     }
 }
 
-@media screen and (max-width:470px){
-    .InterestingProductsWrap{
-        padding-right: 10rem;
+@media screen and (max-width:470px) {
+    .InterestingProductsWrap {
+        padding-right: 30rem;
     }
 }
 
-@media screen and (min-width:580px){
-    .PartsOne{
+@media screen and (min-width:580px) {
+    .PartsOne {
         display: flex;
         column-gap: 30rem;
     }
 }
 
-@media screen and (max-width:955px){
-    .PartsOne{
-        column-gap: 230rem;
+@media screen and (max-width:955px) {
+    .PartsOne {
+        column-gap: 270rem;
     }
 }
 
@@ -905,13 +917,13 @@ footer a {
         display: none;
     }
 
-    .MenuWrap{
+    .MenuWrap {
         justify-content: space-between;
     }
 }
 
-@media screen and (min-width: 794px){
-    .langauge{
+@media screen and (min-width: 794px) {
+    .langauge {
         margin: 0;
     }
 }
@@ -947,8 +959,8 @@ footer a {
     }
 }
 
-@media screen and (min-width: 2200px){
-    html{
+@media screen and (min-width: 2200px) {
+    html {
         font-size: 2.2px;
     }
 
@@ -974,7 +986,7 @@ footer a {
         background-size: cover;
     }
 
-    .ButtonMac1{
+    .ButtonMac1 {
         position: relative;
     }
 
@@ -990,7 +1002,7 @@ footer a {
         background-size: cover;
     }
 
-    .MacbookButton{
+    .MacbookButton {
         position: relative;
     }
 
@@ -1030,7 +1042,7 @@ footer a {
         background-size: cover;
     }
 
-    figcaption a:after{
+    figcaption a:after {
         display: inline-block;
         content: '';
         width: 7rem;
