@@ -1060,4 +1060,8 @@ footer a {
         background-image: url(../css/img/lang.png);
         background-size: cover;
     }
+
+    figcaption img {
+        max-width: 250rem;
+    }
 }
